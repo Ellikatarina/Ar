@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR.js Example</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <a-scene embedded arjs="detectionMode: mono; matrixCodeType: 3x3;">
+
+        <!-- Image Marker with External URL -->
+        <a-marker type="pattern" url="https://raw.githubusercontent.com/Ellikatarina/Ar/4ed1b77da09e5b6d156a8f29dec17fe8f5a85a18/FA88527F-3344-4CBC-9C75-B07BB18D7A8A.patt">
+            <!-- Default red cube -->
+            <a-box position="0 0.5 0" material="color: red;"></a-box>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
